@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017 | 土豆的个人网页</title>
+  <title>ftp | 土豆的个人网页</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="~个人介绍咧~">
-<meta property="og:type" content="website">
-<meta property="og:title" content="土豆的个人网页">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+  <meta name="description" content="如何修改ubuntu的提示符标签（空格分隔）： ubuntu 提示符  命令多行输入不方便也不直观，要想修改这个命令提示符。修改~/.bashrc文件中的PS1即可。PS1是主要的提示符设置，在ubuntu一般为： 　　   \${debian_chroot：+（\$debian_chroot）}/u@/h:/w/$  　　具体的提示符，按分类含义如下：　　主要信息： 　　/u 当前登录用户名">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ftp">
+<meta property="og:url" content="http://yoursite.com/2017/08/21/ftp/index.html">
 <meta property="og:site_name" content="土豆的个人网页">
-<meta property="og:description" content="~个人介绍咧~">
+<meta property="og:description" content="如何修改ubuntu的提示符标签（空格分隔）： ubuntu 提示符  命令多行输入不方便也不直观，要想修改这个命令提示符。修改~/.bashrc文件中的PS1即可。PS1是主要的提示符设置，在ubuntu一般为： 　　   \${debian_chroot：+（\$debian_chroot）}/u@/h:/w/$  　　具体的提示符，按分类含义如下：　　主要信息： 　　/u 当前登录用户名">
 <meta property="og:locale" content="Chinese">
+<meta property="og:updated_time" content="2017-08-21T11:01:05.609Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="土豆的个人网页">
-<meta name="twitter:description" content="~个人介绍咧~">
+<meta name="twitter:title" content="ftp">
+<meta name="twitter:description" content="如何修改ubuntu的提示符标签（空格分隔）： ubuntu 提示符  命令多行输入不方便也不直观，要想修改这个命令提示符。修改~/.bashrc文件中的PS1即可。PS1是主要的提示符设置，在ubuntu一般为： 　　   \${debian_chroot：+（\$debian_chroot）}/u@/h:/w/$  　　具体的提示符，按分类含义如下：　　主要信息： 　　/u 当前登录用户名">
   
     <link rel="alternative" href="/atom.xml" title="土豆的个人网页" type="application/atom+xml">
   
@@ -135,76 +136,176 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-ftp" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      ftp
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/21/ftp/" class="archive-article-date">
+
+        
+        <a href="/2017/08/21/ftp/" class="archive-article-date">
   	<time datetime="2017-08-21T10:59:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-21</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/21/ftp/">ftp</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="如何修改ubuntu的提示符"><a href="#如何修改ubuntu的提示符" class="headerlink" title="如何修改ubuntu的提示符"></a>如何修改ubuntu的提示符</h1><p>标签（空格分隔）： ubuntu 提示符</p>
+<hr>
+<p><strong>命令多行输入不方便也不直观，要想修改这个命令提示符。修改~/.bashrc文件中的PS1即可。</strong><br>PS1是主要的提示符设置，在ubuntu一般为：
+　　</p>
+<blockquote>
+<p> \${debian_chroot：+（\$debian_chroot）}/u@/h:/w/$</p>
+</blockquote>
+<p>　　具体的提示符，按分类含义如下：<br>　　主要信息：</p>
+<p>　　/u 当前登录用户名<br>　　/h 当前计算机名称（譬如ubuntu）<br>　　/H 当前计算机的域名全程，譬如（ubuntu.ubuntu.com）<br>　　/w 当前目录的完整路径。家目录会以~代替<br>　　/W 利用basename取得工作目录名称，所以只会列出最后一个目录<br>　　/$ 一般用户为$，root用户为》<br>　　时间显示<br>　　/t 当前时间（24小时制，HH:MM:SS 分别代表 小时：分钟：秒）<br>　　/T 当前时间（12小时制）<br>　　/@ 当前时间（AM/PM显示）<br>　　/d 当前日期<br>　　Shell信息：<br>　　/v Bash版本<br>　　/V Bash的发布版本号<br>　　/S Shell名称<br>　　/！ Bash命令的历史编号<br>　　/j job序号<br>　　/l Shell的终端名称</p>
+<h2 id=""><a href="#" class="headerlink" title="　　"></a>　　</h2><p><strong>要让改变立即生效source ~/.bashrc即可</strong></p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢欣赏<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/08/21/ftp/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/27/hello-world/" class="archive-article-date">
-  	<time datetime="2017-07-27T07:20:58.638Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-27</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/07/27/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/27/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#如何修改ubuntu的提示符"><span class="toc-number">1.</span> <span class="toc-text">如何修改ubuntu的提示符</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.1.</span> <span class="toc-text">　　</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -227,8 +328,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
